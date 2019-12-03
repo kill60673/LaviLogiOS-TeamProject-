@@ -33,10 +33,15 @@
 		A30F4CEB2388CAAE0065E85C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30F4CE92388CAAE0065E85C /* LaunchScreen.storyboard */; };
 		A30F4CF32388CAE20065E85C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A30F4CF22388CAE20065E85C /* GoogleService-Info.plist */; };
 		C0315EFED042E555B0636CEE /* Pods_LaviLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933C6F726D3107DC7326E0D1 /* Pods_LaviLog.framework */; };
-		E267D21E238D0B2A00CBE5B0 /* DailyPage2ViewController_K.swift in Sources */ = {isa = PBXBuildFile; fileRef = E267D21C238D0B2A00CBE5B0 /* DailyPage2ViewController_K.swift */; };
-		E267D21F238D0B2A00CBE5B0 /* DaiyInsert_ViewController_K.swift in Sources */ = {isa = PBXBuildFile; fileRef = E267D21D238D0B2A00CBE5B0 /* DaiyInsert_ViewController_K.swift */; };
-		E267D223238D0B3E00CBE5B0 /* Daily_Storyboard_K.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E267D221238D0B3E00CBE5B0 /* Daily_Storyboard_K.storyboard */; };
-		E267D224238D0B3E00CBE5B0 /* Home_Storyboard_K.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E267D222238D0B3E00CBE5B0 /* Home_Storyboard_K.storyboard */; };
+		E287846323963843002C11A0 /* Answer_Daily_K.swift in Sources */ = {isa = PBXBuildFile; fileRef = E287846023963843002C11A0 /* Answer_Daily_K.swift */; };
+		E287846423963843002C11A0 /* Question_Daily_K.swift in Sources */ = {isa = PBXBuildFile; fileRef = E287846123963843002C11A0 /* Question_Daily_K.swift */; };
+		E287846523963843002C11A0 /* SearchDailyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E287846223963843002C11A0 /* SearchDailyTableViewCell.swift */; };
+		E287846B23963887002C11A0 /* SearchDailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E287846723963887002C11A0 /* SearchDailyViewController.swift */; };
+		E287846C23963887002C11A0 /* DailyPage2ViewController_K.swift in Sources */ = {isa = PBXBuildFile; fileRef = E287846823963887002C11A0 /* DailyPage2ViewController_K.swift */; };
+		E287846D23963887002C11A0 /* DaiyInsert_ViewController_K.swift in Sources */ = {isa = PBXBuildFile; fileRef = E287846923963887002C11A0 /* DaiyInsert_ViewController_K.swift */; };
+		E287846E23963887002C11A0 /* DateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E287846A23963887002C11A0 /* DateTableViewCell.swift */; };
+		E2878472239638D1002C11A0 /* Daily_Storyboard_K.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2878470239638D1002C11A0 /* Daily_Storyboard_K.storyboard */; };
+		E2878473239638D1002C11A0 /* Home_Storyboard_K.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2878471239638D1002C11A0 /* Home_Storyboard_K.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,10 +75,15 @@
 		A30F4CEA2388CAAE0065E85C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A30F4CEC2388CAAE0065E85C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A30F4CF22388CAE20065E85C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		E267D21C238D0B2A00CBE5B0 /* DailyPage2ViewController_K.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyPage2ViewController_K.swift; sourceTree = "<group>"; };
-		E267D21D238D0B2A00CBE5B0 /* DaiyInsert_ViewController_K.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaiyInsert_ViewController_K.swift; sourceTree = "<group>"; };
-		E267D221238D0B3E00CBE5B0 /* Daily_Storyboard_K.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Daily_Storyboard_K.storyboard; sourceTree = "<group>"; };
-		E267D222238D0B3E00CBE5B0 /* Home_Storyboard_K.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home_Storyboard_K.storyboard; sourceTree = "<group>"; };
+		E287846023963843002C11A0 /* Answer_Daily_K.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer_Daily_K.swift; sourceTree = "<group>"; };
+		E287846123963843002C11A0 /* Question_Daily_K.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question_Daily_K.swift; sourceTree = "<group>"; };
+		E287846223963843002C11A0 /* SearchDailyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchDailyTableViewCell.swift; sourceTree = "<group>"; };
+		E287846723963887002C11A0 /* SearchDailyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchDailyViewController.swift; sourceTree = "<group>"; };
+		E287846823963887002C11A0 /* DailyPage2ViewController_K.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyPage2ViewController_K.swift; sourceTree = "<group>"; };
+		E287846923963887002C11A0 /* DaiyInsert_ViewController_K.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaiyInsert_ViewController_K.swift; sourceTree = "<group>"; };
+		E287846A23963887002C11A0 /* DateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTableViewCell.swift; sourceTree = "<group>"; };
+		E2878470239638D1002C11A0 /* Daily_Storyboard_K.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Daily_Storyboard_K.storyboard; sourceTree = "<group>"; };
+		E2878471239638D1002C11A0 /* Home_Storyboard_K.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home_Storyboard_K.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +120,9 @@
 		5281E51C238D166400C5E554 /* Kao */ = {
 			isa = PBXGroup;
 			children = (
-				E267D21B238D0B2A00CBE5B0 /* Controller_Daily_K */,
-				E267D220238D0B3E00CBE5B0 /* View_Daily_K */,
+				E287846F239638D1002C11A0 /* View_Daily_K */,
+				E287846623963887002C11A0 /* Controller_Daily_K */,
+				E287845F23963843002C11A0 /* Moudel_Daily_K */,
 			);
 			path = Kao;
 			sourceTree = "<group>";
@@ -214,20 +225,32 @@
 			path = LaviLog;
 			sourceTree = "<group>";
 		};
-		E267D21B238D0B2A00CBE5B0 /* Controller_Daily_K */ = {
+		E287845F23963843002C11A0 /* Moudel_Daily_K */ = {
 			isa = PBXGroup;
 			children = (
-				E267D21C238D0B2A00CBE5B0 /* DailyPage2ViewController_K.swift */,
-				E267D21D238D0B2A00CBE5B0 /* DaiyInsert_ViewController_K.swift */,
+				E287846023963843002C11A0 /* Answer_Daily_K.swift */,
+				E287846123963843002C11A0 /* Question_Daily_K.swift */,
+				E287846223963843002C11A0 /* SearchDailyTableViewCell.swift */,
+			);
+			path = Moudel_Daily_K;
+			sourceTree = "<group>";
+		};
+		E287846623963887002C11A0 /* Controller_Daily_K */ = {
+			isa = PBXGroup;
+			children = (
+				E287846723963887002C11A0 /* SearchDailyViewController.swift */,
+				E287846823963887002C11A0 /* DailyPage2ViewController_K.swift */,
+				E287846923963887002C11A0 /* DaiyInsert_ViewController_K.swift */,
+				E287846A23963887002C11A0 /* DateTableViewCell.swift */,
 			);
 			path = Controller_Daily_K;
 			sourceTree = "<group>";
 		};
-		E267D220238D0B3E00CBE5B0 /* View_Daily_K */ = {
+		E287846F239638D1002C11A0 /* View_Daily_K */ = {
 			isa = PBXGroup;
 			children = (
-				E267D221238D0B3E00CBE5B0 /* Daily_Storyboard_K.storyboard */,
-				E267D222238D0B3E00CBE5B0 /* Home_Storyboard_K.storyboard */,
+				E2878470239638D1002C11A0 /* Daily_Storyboard_K.storyboard */,
+				E2878471239638D1002C11A0 /* Home_Storyboard_K.storyboard */,
 			);
 			path = View_Daily_K;
 			sourceTree = "<group>";
@@ -293,14 +316,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5281E529238D16CC00C5E554 /* iu.jpeg in Resources */,
-				E267D224238D0B3E00CBE5B0 /* Home_Storyboard_K.storyboard in Resources */,
 				5281E528238D16CC00C5E554 /* background.png in Resources */,
 				A30F4CEB2388CAAE0065E85C /* LaunchScreen.storyboard in Resources */,
 				A30F4CF32388CAE20065E85C /* GoogleService-Info.plist in Resources */,
-				E267D223238D0B3E00CBE5B0 /* Daily_Storyboard_K.storyboard in Resources */,
 				5281E527238D16CC00C5E554 /* swift.png in Resources */,
 				5281E53D238D175800C5E554 /* YiNan.storyboard in Resources */,
 				A30F4CE82388CAAE0065E85C /* Assets.xcassets in Resources */,
+				E2878473239638D1002C11A0 /* Home_Storyboard_K.storyboard in Resources */,
+				E2878472239638D1002C11A0 /* Daily_Storyboard_K.storyboard in Resources */,
 				A30F4CE62388CAAC0065E85C /* Main.storyboard in Resources */,
 				5281E52A238D16CC00C5E554 /* ios.png in Resources */,
 			);
@@ -355,9 +378,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E267D21F238D0B2A00CBE5B0 /* DaiyInsert_ViewController_K.swift in Sources */,
-				E267D21E238D0B2A00CBE5B0 /* DailyPage2ViewController_K.swift in Sources */,
+				E287846423963843002C11A0 /* Question_Daily_K.swift in Sources */,
 				5281E53E238D175800C5E554 /* FriendHomeVC.swift in Sources */,
+				E287846E23963887002C11A0 /* DateTableViewCell.swift in Sources */,
 				5281E539238D173100C5E554 /* SearchFriendVC.swift in Sources */,
 				5281E520238D16BF00C5E554 /* QRCodeVC.swift in Sources */,
 				5281E537238D173100C5E554 /* Friend.swift in Sources */,
@@ -366,13 +389,18 @@
 				A30F4CDF2388CAAC0065E85C /* AppDelegate.swift in Sources */,
 				528022E8239550CB008777B0 /* Notice.swift in Sources */,
 				5281E530238D170E00C5E554 /* SearchUserVC.swift in Sources */,
+				E287846D23963887002C11A0 /* DaiyInsert_ViewController_K.swift in Sources */,
+				E287846B23963887002C11A0 /* SearchDailyViewController.swift in Sources */,
 				5281E522238D16BF00C5E554 /* GenQRCodeVC.swift in Sources */,
 				528022EC239550D8008777B0 /* NoticeTVC.swift in Sources */,
 				5281E521238D16BF00C5E554 /* QRCodeViewController.swift in Sources */,
 				A30F4CE12388CAAC0065E85C /* SceneDelegate.swift in Sources */,
+				E287846C23963887002C11A0 /* DailyPage2ViewController_K.swift in Sources */,
 				52B3B1D7239561F1009E66AB /* NoticeCell.swift in Sources */,
 				5281E538238D173100C5E554 /* FriendCell.swift in Sources */,
 				5281E52F238D170E00C5E554 /* SearchUserResultVC.swift in Sources */,
+				E287846323963843002C11A0 /* Answer_Daily_K.swift in Sources */,
+				E287846523963843002C11A0 /* SearchDailyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
