@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		528022E8239550CB008777B0 /* Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528022E7239550CB008777B0 /* Notice.swift */; };
 		528022EC239550D8008777B0 /* NoticeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528022EB239550D8008777B0 /* NoticeTVC.swift */; };
-		5281E520238D16BF00C5E554 /* QRCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5281E51D238D16BA00C5E554 /* QRCodeVC.swift */; };
 		5281E521238D16BF00C5E554 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5281E51E238D16BC00C5E554 /* QRCodeViewController.swift */; };
 		5281E522238D16BF00C5E554 /* GenQRCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5281E51F238D16BF00C5E554 /* GenQRCodeVC.swift */; };
 		5281E527238D16CC00C5E554 /* swift.png in Resources */ = {isa = PBXBuildFile; fileRef = 5281E523238D16C600C5E554 /* swift.png */; };
@@ -66,7 +65,6 @@
 		239B829599FFAA741B2151EE /* Pods-LaviLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaviLog.release.xcconfig"; path = "Target Support Files/Pods-LaviLog/Pods-LaviLog.release.xcconfig"; sourceTree = "<group>"; };
 		528022E7239550CB008777B0 /* Notice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notice.swift; sourceTree = "<group>"; };
 		528022EB239550D8008777B0 /* NoticeTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeTVC.swift; sourceTree = "<group>"; };
-		5281E51D238D16BA00C5E554 /* QRCodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeVC.swift; sourceTree = "<group>"; };
 		5281E51E238D16BC00C5E554 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		5281E51F238D16BF00C5E554 /* GenQRCodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenQRCodeVC.swift; sourceTree = "<group>"; };
 		5281E523238D16C600C5E554 /* swift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swift.png; sourceTree = "<group>"; };
@@ -164,7 +162,6 @@
 		5281E52B238D16DF00C5E554 /* QRCode */ = {
 			isa = PBXGroup;
 			children = (
-				5281E51D238D16BA00C5E554 /* QRCodeVC.swift */,
 				5281E51E238D16BC00C5E554 /* QRCodeViewController.swift */,
 				5281E51F238D16BF00C5E554 /* GenQRCodeVC.swift */,
 			);

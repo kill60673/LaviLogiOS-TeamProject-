@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import SafariServices
 
-class QRCodeViewController: UIViewController , AVCaptureMetadataOutputObjectsDelegate ,UIImagePickerControllerDelegate , UINavigationControllerDelegate {
+class QRCodeVC: UIViewController , AVCaptureMetadataOutputObjectsDelegate ,UIImagePickerControllerDelegate , UINavigationControllerDelegate {
     
     @IBOutlet weak var camView: UIView!
     @IBOutlet weak var codeTextLabel: UILabel!

@@ -26,7 +26,7 @@ class NoticeCell: UITableViewCell {
 //        lbM2.layer.cornerRadius = 12
 //        lbM2.layer.masksToBounds = true
         // cell 圓角
-        self.layer.cornerRadius = 50
+        self.layer.cornerRadius = 20
         self.layer.masksToBounds = true
     }
 
