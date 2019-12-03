@@ -10,8 +10,8 @@ import UIKit
 import Firebase
 
 class FriendHomeVC: UIViewController {
-    
-    
+    //
+    //
     override func viewDidLoad() {
         super.viewDidLoad()
         
