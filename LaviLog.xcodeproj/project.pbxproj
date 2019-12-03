@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		528022E8239550CB008777B0 /* Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528022E7239550CB008777B0 /* Notice.swift */; };
+		528022EC239550D8008777B0 /* NoticeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528022EB239550D8008777B0 /* NoticeTVC.swift */; };
+		5281E520238D16BF00C5E554 /* QRCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5281E51D238D16BA00C5E554 /* QRCodeVC.swift */; };
+		5281E521238D16BF00C5E554 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5281E51E238D16BC00C5E554 /* QRCodeViewController.swift */; };
+		5281E522238D16BF00C5E554 /* GenQRCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5281E51F238D16BF00C5E554 /* GenQRCodeVC.swift */; };
+		5281E527238D16CC00C5E554 /* swift.png in Resources */ = {isa = PBXBuildFile; fileRef = 5281E523238D16C600C5E554 /* swift.png */; };
+		5281E528238D16CC00C5E554 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 5281E524238D16C800C5E554 /* background.png */; };
+		5281E529238D16CC00C5E554 /* iu.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5281E525238D16CA00C5E554 /* iu.jpeg */; };
+		5281E52A238D16CC00C5E554 /* ios.png in Resources */ = {isa = PBXBuildFile; fileRef = 5281E526238D16CC00C5E554 /* ios.png */; };
+		5281E52F238D170E00C5E554 /* SearchUserResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5281E52D238D170C00C5E554 /* SearchUserResultVC.swift */; };
+		5281E530238D170E00C5E554 /* SearchUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5281E52E238D170D00C5E554 /* SearchUserVC.swift */; };
+		5281E536238D173100C5E554 /* SearchFriendResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5281E532238D172A00C5E554 /* SearchFriendResultVC.swift */; };
+		5281E537238D173100C5E554 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5281E533238D172C00C5E554 /* Friend.swift */; };
+		5281E538238D173100C5E554 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5281E534238D172F00C5E554 /* FriendCell.swift */; };
+		5281E539238D173100C5E554 /* SearchFriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5281E535238D173100C5E554 /* SearchFriendVC.swift */; };
+		5281E53D238D175800C5E554 /* YiNan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5281E53B238D175400C5E554 /* YiNan.storyboard */; };
+		5281E53E238D175800C5E554 /* FriendHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5281E53C238D175800C5E554 /* FriendHomeVC.swift */; };
+		52B3B1D7239561F1009E66AB /* NoticeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B3B1D6239561F1009E66AB /* NoticeCell.swift */; };
+		A30F4CDF2388CAAC0065E85C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30F4CDE2388CAAC0065E85C /* AppDelegate.swift */; };
+		A30F4CE12388CAAC0065E85C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30F4CE02388CAAC0065E85C /* SceneDelegate.swift */; };
+		A30F4CE32388CAAC0065E85C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30F4CE22388CAAC0065E85C /* ViewController.swift */; };
+		A30F4CE62388CAAC0065E85C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30F4CE42388CAAC0065E85C /* Main.storyboard */; };
+		A30F4CE82388CAAE0065E85C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A30F4CE72388CAAE0065E85C /* Assets.xcassets */; };
+		A30F4CEB2388CAAE0065E85C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30F4CE92388CAAE0065E85C /* LaunchScreen.storyboard */; };
+		A30F4CF32388CAE20065E85C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A30F4CF22388CAE20065E85C /* GoogleService-Info.plist */; };
+		C0315EFED042E555B0636CEE /* Pods_LaviLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933C6F726D3107DC7326E0D1 /* Pods_LaviLog.framework */; };
+		E267D21E238D0B2A00CBE5B0 /* DailyPage2ViewController_K.swift in Sources */ = {isa = PBXBuildFile; fileRef = E267D21C238D0B2A00CBE5B0 /* DailyPage2ViewController_K.swift */; };
+		E267D21F238D0B2A00CBE5B0 /* DaiyInsert_ViewController_K.swift in Sources */ = {isa = PBXBuildFile; fileRef = E267D21D238D0B2A00CBE5B0 /* DaiyInsert_ViewController_K.swift */; };
+		E267D223238D0B3E00CBE5B0 /* Daily_Storyboard_K.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E267D221238D0B3E00CBE5B0 /* Daily_Storyboard_K.storyboard */; };
+		E267D224238D0B3E00CBE5B0 /* Home_Storyboard_K.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E267D222238D0B3E00CBE5B0 /* Home_Storyboard_K.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1545BC26871D2C28A99594E3 /* Pods-LaviLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaviLog.debug.xcconfig"; path = "Target Support Files/Pods-LaviLog/Pods-LaviLog.debug.xcconfig"; sourceTree = "<group>"; };
+		239B829599FFAA741B2151EE /* Pods-LaviLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaviLog.release.xcconfig"; path = "Target Support Files/Pods-LaviLog/Pods-LaviLog.release.xcconfig"; sourceTree = "<group>"; };
+		528022E7239550CB008777B0 /* Notice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notice.swift; sourceTree = "<group>"; };
+		528022EB239550D8008777B0 /* NoticeTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeTVC.swift; sourceTree = "<group>"; };
+		5281E51D238D16BA00C5E554 /* QRCodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeVC.swift; sourceTree = "<group>"; };
+		5281E51E238D16BC00C5E554 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		5281E51F238D16BF00C5E554 /* GenQRCodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenQRCodeVC.swift; sourceTree = "<group>"; };
+		5281E523238D16C600C5E554 /* swift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swift.png; sourceTree = "<group>"; };
+		5281E524238D16C800C5E554 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		5281E525238D16CA00C5E554 /* iu.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iu.jpeg; sourceTree = "<group>"; };
+		5281E526238D16CC00C5E554 /* ios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ios.png; sourceTree = "<group>"; };
+		5281E52D238D170C00C5E554 /* SearchUserResultVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchUserResultVC.swift; sourceTree = "<group>"; };
+		5281E52E238D170D00C5E554 /* SearchUserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchUserVC.swift; sourceTree = "<group>"; };
+		5281E532238D172A00C5E554 /* SearchFriendResultVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFriendResultVC.swift; sourceTree = "<group>"; };
+		5281E533238D172C00C5E554 /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		5281E534238D172F00C5E554 /* FriendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
+		5281E535238D173100C5E554 /* SearchFriendVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFriendVC.swift; sourceTree = "<group>"; };
+		5281E53B238D175400C5E554 /* YiNan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YiNan.storyboard; sourceTree = "<group>"; };
+		5281E53C238D175800C5E554 /* FriendHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendHomeVC.swift; sourceTree = "<group>"; };
+		52B3B1D6239561F1009E66AB /* NoticeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeCell.swift; sourceTree = "<group>"; };
+		933C6F726D3107DC7326E0D1 /* Pods_LaviLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaviLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A30F4CDB2388CAAC0065E85C /* LaviLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaviLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A30F4CDE2388CAAC0065E85C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A30F4CE02388CAAC0065E85C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A30F4CE22388CAAC0065E85C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A30F4CE52388CAAC0065E85C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A30F4CE72388CAAE0065E85C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A30F4CEA2388CAAE0065E85C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A30F4CEC2388CAAE0065E85C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A30F4CF22388CAE20065E85C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E267D21C238D0B2A00CBE5B0 /* DailyPage2ViewController_K.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyPage2ViewController_K.swift; sourceTree = "<group>"; };
+		E267D21D238D0B2A00CBE5B0 /* DaiyInsert_ViewController_K.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaiyInsert_ViewController_K.swift; sourceTree = "<group>"; };
+		E267D221238D0B3E00CBE5B0 /* Daily_Storyboard_K.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Daily_Storyboard_K.storyboard; sourceTree = "<group>"; };
+		E267D222238D0B3E00CBE5B0 /* Home_Storyboard_K.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home_Storyboard_K.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A30F4CD82388CAAC0065E85C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0315EFED042E555B0636CEE /* Pods_LaviLog.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09BBD47BFABDC5BA3994EB1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1545BC26871D2C28A99594E3 /* Pods-LaviLog.debug.xcconfig */,
+				239B829599FFAA741B2151EE /* Pods-LaviLog.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		528022ED239550DE008777B0 /* NoticeFriend */ = {
+			isa = PBXGroup;
+			children = (
+				528022E7239550CB008777B0 /* Notice.swift */,
+				52B3B1D6239561F1009E66AB /* NoticeCell.swift */,
+				528022EB239550D8008777B0 /* NoticeTVC.swift */,
+			);
+			path = NoticeFriend;
+			sourceTree = "<group>";
+		};
+		5281E51C238D166400C5E554 /* Kao */ = {
+			isa = PBXGroup;
+			children = (
+				E267D21B238D0B2A00CBE5B0 /* Controller_Daily_K */,
+				E267D220238D0B3E00CBE5B0 /* View_Daily_K */,
+			);
+			path = Kao;
+			sourceTree = "<group>";
+		};
+		5281E52B238D16DF00C5E554 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				5281E51D238D16BA00C5E554 /* QRCodeVC.swift */,
+				5281E51E238D16BC00C5E554 /* QRCodeViewController.swift */,
+				5281E51F238D16BF00C5E554 /* GenQRCodeVC.swift */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+		5281E52C238D16EC00C5E554 /* lavilogImage */ = {
+			isa = PBXGroup;
+			children = (
+				5281E524238D16C800C5E554 /* background.png */,
+				5281E526238D16CC00C5E554 /* ios.png */,
+				5281E525238D16CA00C5E554 /* iu.jpeg */,
+				5281E523238D16C600C5E554 /* swift.png */,
+			);
+			path = lavilogImage;
+			sourceTree = "<group>";
+		};
+		5281E531238D171600C5E554 /* SearchUser */ = {
+			isa = PBXGroup;
+			children = (
+				5281E52E238D170D00C5E554 /* SearchUserVC.swift */,
+				5281E52D238D170C00C5E554 /* SearchUserResultVC.swift */,
+			);
+			path = SearchUser;
+			sourceTree = "<group>";
+		};
+		5281E53A238D174100C5E554 /* SearchFriend */ = {
+			isa = PBXGroup;
+			children = (
+				5281E533238D172C00C5E554 /* Friend.swift */,
+				5281E534238D172F00C5E554 /* FriendCell.swift */,
+				5281E535238D173100C5E554 /* SearchFriendVC.swift */,
+				5281E532238D172A00C5E554 /* SearchFriendResultVC.swift */,
+			);
+			path = SearchFriend;
+			sourceTree = "<group>";
+		};
+		5281E53F238D176700C5E554 /* YiNan */ = {
+			isa = PBXGroup;
+			children = (
+				5281E53B238D175400C5E554 /* YiNan.storyboard */,
+				5281E53C238D175800C5E554 /* FriendHomeVC.swift */,
+				5281E53A238D174100C5E554 /* SearchFriend */,
+				5281E531238D171600C5E554 /* SearchUser */,
+				5281E52B238D16DF00C5E554 /* QRCode */,
+				528022ED239550DE008777B0 /* NoticeFriend */,
+			);
+			path = YiNan;
+			sourceTree = "<group>";
+		};
+		7DC4543475AEF18491C1CA90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				933C6F726D3107DC7326E0D1 /* Pods_LaviLog.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A30F4CD22388CAAC0065E85C = {
+			isa = PBXGroup;
+			children = (
+				A30F4CDD2388CAAC0065E85C /* LaviLog */,
+				A30F4CDC2388CAAC0065E85C /* Products */,
+				09BBD47BFABDC5BA3994EB1F /* Pods */,
+				7DC4543475AEF18491C1CA90 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A30F4CDC2388CAAC0065E85C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A30F4CDB2388CAAC0065E85C /* LaviLog.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A30F4CDD2388CAAC0065E85C /* LaviLog */ = {
+			isa = PBXGroup;
+			children = (
+				5281E52C238D16EC00C5E554 /* lavilogImage */,
+				A30F4CDE2388CAAC0065E85C /* AppDelegate.swift */,
+				A30F4CE02388CAAC0065E85C /* SceneDelegate.swift */,
+				A30F4CE22388CAAC0065E85C /* ViewController.swift */,
+				A30F4CE42388CAAC0065E85C /* Main.storyboard */,
+				5281E51C238D166400C5E554 /* Kao */,
+				5281E53F238D176700C5E554 /* YiNan */,
+				A30F4CE72388CAAE0065E85C /* Assets.xcassets */,
+				A30F4CE92388CAAE0065E85C /* LaunchScreen.storyboard */,
+				A30F4CF22388CAE20065E85C /* GoogleService-Info.plist */,
+				A30F4CEC2388CAAE0065E85C /* Info.plist */,
+			);
+			path = LaviLog;
+			sourceTree = "<group>";
+		};
+		E267D21B238D0B2A00CBE5B0 /* Controller_Daily_K */ = {
+			isa = PBXGroup;
+			children = (
+				E267D21C238D0B2A00CBE5B0 /* DailyPage2ViewController_K.swift */,
+				E267D21D238D0B2A00CBE5B0 /* DaiyInsert_ViewController_K.swift */,
+			);
+			path = Controller_Daily_K;
+			sourceTree = "<group>";
+		};
+		E267D220238D0B3E00CBE5B0 /* View_Daily_K */ = {
+			isa = PBXGroup;
+			children = (
+				E267D221238D0B3E00CBE5B0 /* Daily_Storyboard_K.storyboard */,
+				E267D222238D0B3E00CBE5B0 /* Home_Storyboard_K.storyboard */,
+			);
+			path = View_Daily_K;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A30F4CDA2388CAAC0065E85C /* LaviLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A30F4CEF2388CAAE0065E85C /* Build configuration list for PBXNativeTarget "LaviLog" */;
+			buildPhases = (
+				349DBF4E284C1DD7225C13E5 /* [CP] Check Pods Manifest.lock */,
+				A30F4CD72388CAAC0065E85C /* Sources */,
+				A30F4CD82388CAAC0065E85C /* Frameworks */,
+				A30F4CD92388CAAC0065E85C /* Resources */,
+				6DFE6B1AB0E8DFA0C7A7B69D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaviLog;
+			productName = LaviLog;
+			productReference = A30F4CDB2388CAAC0065E85C /* LaviLog.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A30F4CD32388CAAC0065E85C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "\U001f張哲禎";
+				TargetAttributes = {
+					A30F4CDA2388CAAC0065E85C = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A30F4CD62388CAAC0065E85C /* Build configuration list for PBXProject "LaviLog" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A30F4CD22388CAAC0065E85C;
+			productRefGroup = A30F4CDC2388CAAC0065E85C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A30F4CDA2388CAAC0065E85C /* LaviLog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A30F4CD92388CAAC0065E85C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5281E529238D16CC00C5E554 /* iu.jpeg in Resources */,
+				E267D224238D0B3E00CBE5B0 /* Home_Storyboard_K.storyboard in Resources */,
+				5281E528238D16CC00C5E554 /* background.png in Resources */,
+				A30F4CEB2388CAAE0065E85C /* LaunchScreen.storyboard in Resources */,
+				A30F4CF32388CAE20065E85C /* GoogleService-Info.plist in Resources */,
+				E267D223238D0B3E00CBE5B0 /* Daily_Storyboard_K.storyboard in Resources */,
+				5281E527238D16CC00C5E554 /* swift.png in Resources */,
+				5281E53D238D175800C5E554 /* YiNan.storyboard in Resources */,
+				A30F4CE82388CAAE0065E85C /* Assets.xcassets in Resources */,
+				A30F4CE62388CAAC0065E85C /* Main.storyboard in Resources */,
+				5281E52A238D16CC00C5E554 /* ios.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		349DBF4E284C1DD7225C13E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LaviLog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DFE6B1AB0E8DFA0C7A7B69D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LaviLog/Pods-LaviLog-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LaviLog/Pods-LaviLog-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LaviLog/Pods-LaviLog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A30F4CD72388CAAC0065E85C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E267D21F238D0B2A00CBE5B0 /* DaiyInsert_ViewController_K.swift in Sources */,
+				E267D21E238D0B2A00CBE5B0 /* DailyPage2ViewController_K.swift in Sources */,
+				5281E53E238D175800C5E554 /* FriendHomeVC.swift in Sources */,
+				5281E539238D173100C5E554 /* SearchFriendVC.swift in Sources */,
+				5281E520238D16BF00C5E554 /* QRCodeVC.swift in Sources */,
+				5281E537238D173100C5E554 /* Friend.swift in Sources */,
+				5281E536238D173100C5E554 /* SearchFriendResultVC.swift in Sources */,
+				A30F4CE32388CAAC0065E85C /* ViewController.swift in Sources */,
+				A30F4CDF2388CAAC0065E85C /* AppDelegate.swift in Sources */,
+				528022E8239550CB008777B0 /* Notice.swift in Sources */,
+				5281E530238D170E00C5E554 /* SearchUserVC.swift in Sources */,
+				5281E522238D16BF00C5E554 /* GenQRCodeVC.swift in Sources */,
+				528022EC239550D8008777B0 /* NoticeTVC.swift in Sources */,
+				5281E521238D16BF00C5E554 /* QRCodeViewController.swift in Sources */,
+				A30F4CE12388CAAC0065E85C /* SceneDelegate.swift in Sources */,
+				52B3B1D7239561F1009E66AB /* NoticeCell.swift in Sources */,
+				5281E538238D173100C5E554 /* FriendCell.swift in Sources */,
+				5281E52F238D170E00C5E554 /* SearchUserResultVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A30F4CE42388CAAC0065E85C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A30F4CE52388CAAC0065E85C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A30F4CE92388CAAE0065E85C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A30F4CEA2388CAAE0065E85C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A30F4CED2388CAAE0065E85C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A30F4CEE2388CAAE0065E85C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A30F4CF02388CAAE0065E85C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1545BC26871D2C28A99594E3 /* Pods-LaviLog.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LaviLog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = watermelon.LaviLog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A30F4CF12388CAAE0065E85C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 239B829599FFAA741B2151EE /* Pods-LaviLog.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LaviLog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = watermelon.LaviLog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A30F4CD62388CAAC0065E85C /* Build configuration list for PBXProject "LaviLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A30F4CED2388CAAE0065E85C /* Debug */,
+				A30F4CEE2388CAAE0065E85C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A30F4CEF2388CAAE0065E85C /* Build configuration list for PBXNativeTarget "LaviLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A30F4CF02388CAAE0065E85C /* Debug */,
+				A30F4CF12388CAAE0065E85C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A30F4CD32388CAAC0065E85C /* Project object */;
+}
