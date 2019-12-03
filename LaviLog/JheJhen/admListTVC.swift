@@ -31,14 +31,12 @@ class admListTVC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "admsList", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "admsList", for: indexPath) as! userListCell
         let adm = adms[indexPath.row]
         print(adm.account!)
-        cell.textLabel?.text = adm.name!
-        cell.detailTextLabel?.text = adm.name!
-        cell.imageView?.image = dicImages[adm.imagePath!]
-        cell.imageView?.frame.size.width = 60
-        cell.imageView?.frame.size.height = 60
+        cell.lbName.text = adm.name!
+        cell.lbAccount.text = adm.name!
+        cell.ivPhoto.image = dicImages[adm.imagePath!]
         return cell
     }
     
