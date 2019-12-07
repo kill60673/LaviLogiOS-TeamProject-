@@ -32,7 +32,7 @@ class MyProfileTVC: UITableViewController {
         loadingView.startAnimating()
         loadingView.frame.origin = CGPoint(x: 200, y: 400)
         tableView.addSubview(loadingView)
-        if let account = Auth.auth().currentUser!.email {
+        if let account = userAccount {
             lbAccount.text = account
             db = Firestore.firestore()
             loadFireStore()
@@ -97,6 +97,7 @@ class MyProfileTVC: UITableViewController {
             if isDatePickerShow{
                 isDatePickerShow = false
                 datePicker?.removeFromSuperview()
+                dataChange(dateString:lbBirthDay.text!)
             }else{
                 isDatePickerShow = true
                 datePicker = UIDatePicker(frame: CGRect(x: 0, y: 0, width: 500, height: 200))
@@ -105,7 +106,10 @@ class MyProfileTVC: UITableViewController {
                 let formatter = DateFormatter()
                 formatter.dateFormat = "yyyy年MM月dd日"
                 let birthDayDate = formatter.date(from: user.birthDay!)
-                datePicker?.date = birthDayDate!
+                if birthDayDate != nil {
+                 datePicker?.date = birthDayDate!
+//                    新加入的會員，沒有登記過的生日資料，會是nil
+                }
                 datePicker?.locale = Locale(identifier: "zh_TW")
                 datePickerAddToolBar()
                 datePicker?.center = CGPoint(x: (UIScreen.main.bounds.width)*0.55, y: (UIScreen.main.bounds.height)*0.6)
@@ -123,28 +127,8 @@ class MyProfileTVC: UITableViewController {
             
         }
         if indexPath.section == 2 && indexPath.row == 3 {
-//            改密碼
+//            改密碼,直接拉線到下一頁
             
-        }
-    }
-    func  loadFireStore(){
-        db.collection("users").whereField("account", isEqualTo: Auth.auth().currentUser!.email).getDocuments { (snapshot, error) in
-            if let snapshot = snapshot {
-                for document in snapshot.documents {
-                    self.user = Users(dic: document.data())
-                    self.lbName.text = self.user.name!
-                    self.lbPhone.text = self.user.phone!
-                    self.lbGender.text = self.user.gender!
-                    self.lbBirthDay.text = self.user.birthDay!
-                    self.id = self.user.id!
-                    let password = self.user.password!
-                        var text = ""
-//                        for _ in 0..<password.count {
-//                            text += "*"
-//                        }
-                        self.lbPassword.text = text
-                    }
-            }
         }
     }
     func alertControl (conTitle:String,conMessage:String?) {
@@ -155,13 +139,37 @@ class MyProfileTVC: UITableViewController {
         present(alertController,animated: true)
     }
     
+    func dataChange(dateString:String){
+        self.db.collection("users").whereField("account", isEqualTo: user.account!).getDocuments { (querySnapshot, error) in
+            
+            if let querySnapshot = querySnapshot {
+                let document = querySnapshot.documents.first
+                document?.reference.updateData(["birthDay":dateString], completion: { (error) in
+                    if error == nil {
+                        self.alertControl(conTitle: "生日變更完成", conMessage: nil)
+                    }else {
+                        print(error?.localizedDescription)
+                    }
+                })
+            }
+        }
+    }
+    
+    
     func genderChange(gender:String){
-        self.db.collection("users").document((self.user.id!)).setData(["account":self.user.account!,"birthDay":self.user.birthDay,"gender":gender,"id":self.user.id!,"imagePath":self.user.imagePath!,"name":self.user.name,"password":self.user.password!,"phone":self.user.phone,"status":self.user.status,"verificationCode":self.user.verificationCode,"verificationId":self.user.verificationId]) { (error) in
-            if error == nil {
-                self.alertControl(conTitle: "性別變更完成", conMessage: nil)
-                self.lbGender.text = gender
-            }else {
-                print(error?.localizedDescription)
+       
+        self.db.collection("users").whereField("account", isEqualTo: user.account!).getDocuments { (querySnapshot, error) in
+            
+            if let querySnapshot = querySnapshot {
+                let document = querySnapshot.documents.first
+                document?.reference.updateData(["gender":gender], completion: { (error) in
+                    if error == nil {
+                        self.alertControl(conTitle: "性別變更完成", conMessage: nil)
+                        self.lbGender.text = gender
+                    }else {
+                        print(error?.localizedDescription)
+                    }
+                })
             }
         }
     }
@@ -185,18 +193,39 @@ class MyProfileTVC: UITableViewController {
        }
     @objc func doneAction() {
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy年MM日dd月"
+        formatter.dateFormat = "yyyy年MM月dd日"
         lbBirthDay.text = formatter.string(from: datePicker!.date)
         self.datePicker!.removeFromSuperview()
     }
     @objc func closeView() {
         self.view.endEditing(true)
     }
+    func  loadFireStore(){
+        db.collection("users").whereField("account", isEqualTo: userAccount!).getDocuments { (snapshot, error) in
+            if let snapshot = snapshot {
+                for document in snapshot.documents {
+                    self.user = Users(dic: document.data())
+                    self.lbName.text = self.user.name!
+                    self.lbPhone.text = self.user.phone!
+                    self.lbGender.text = self.user.gender!
+                    self.lbBirthDay.text = self.user.birthDay!
+                    self.id = self.user.id!
+                    let password = self.user.password!
+                    var text = ""
+                    //                        for _ in 0..<password.count {
+                    //                            text += "*"
+                    //                        }
+                    self.lbPassword.text = text
+                }
+            }
+        }
+    }
     
     func downloadPhoto(){
-            var imagePath = ""
-            let db = Firestore.firestore()
-            db.collection("users").whereField("account", isEqualTo: "\(Auth.auth().currentUser!.email!)").addSnapshotListener { (querySnapshot, error) in
+        print("看看",userAccount)
+        var imagePath = ""
+        let db = Firestore.firestore()
+            db.collection("users").whereField("account", isEqualTo: "\(userAccount!)").addSnapshotListener { (querySnapshot, error) in
                 guard let querySnapshot = querySnapshot else {
                     return
                 }

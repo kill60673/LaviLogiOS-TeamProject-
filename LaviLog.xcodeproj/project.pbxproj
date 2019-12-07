@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -42,12 +42,20 @@
 		A3038ED52396471F0013EE64 /* signUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3038EC42396471E0013EE64 /* signUpVC.swift */; };
 		A3038ED62396471F0013EE64 /* admListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3038EC52396471F0013EE64 /* admListTVC.swift */; };
 		A3038ED82396476F0013EE64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3038ED72396476F0013EE64 /* Main.storyboard */; };
+		A3038EDA239653B50013EE64 /* admListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3038ED9239653B50013EE64 /* admListCell.swift */; };
 		A30F4CDF2388CAAC0065E85C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30F4CDE2388CAAC0065E85C /* AppDelegate.swift */; };
 		A30F4CE12388CAAC0065E85C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30F4CE02388CAAC0065E85C /* SceneDelegate.swift */; };
 		A30F4CE32388CAAC0065E85C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30F4CE22388CAAC0065E85C /* ViewController.swift */; };
 		A30F4CE82388CAAE0065E85C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A30F4CE72388CAAE0065E85C /* Assets.xcassets */; };
 		A30F4CEB2388CAAE0065E85C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30F4CE92388CAAE0065E85C /* LaunchScreen.storyboard */; };
 		A30F4CF32388CAE20065E85C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A30F4CF22388CAE20065E85C /* GoogleService-Info.plist */; };
+		A3450DF423976D6400787ADD /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = A3450DF323976D6400787ADD /* FacebookLogin */; };
+		A3450DF623977D6400787ADD /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3450DF523977D6400787ADD /* Accelerate.framework */; };
+		A3450DF82397933500787ADD /* FirebaseWorks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3450DF72397933500787ADD /* FirebaseWorks.swift */; };
+		A356EA642396C80C002695EF /* loadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A356EA632396C80C002695EF /* loadingView.xib */; };
+		A356EA682396CA80002695EF /* FuncLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356EA672396CA80002695EF /* FuncLoadingView.swift */; };
+		A3D53B82239BCDE20000D4E8 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D53B7F239BCDBD0000D4E8 /* Charts.framework */; };
+		A3D53B83239BCDE20000D4E8 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A3D53B7F239BCDBD0000D4E8 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C0315EFED042E555B0636CEE /* Pods_LaviLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933C6F726D3107DC7326E0D1 /* Pods_LaviLog.framework */; };
 		E287846323963843002C11A0 /* Answer_Daily_K.swift in Sources */ = {isa = PBXBuildFile; fileRef = E287846023963843002C11A0 /* Answer_Daily_K.swift */; };
 		E287846423963843002C11A0 /* Question_Daily_K.swift in Sources */ = {isa = PBXBuildFile; fileRef = E287846123963843002C11A0 /* Question_Daily_K.swift */; };
@@ -59,6 +67,37 @@
 		E2878472239638D1002C11A0 /* Daily_Storyboard_K.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2878470239638D1002C11A0 /* Daily_Storyboard_K.storyboard */; };
 		E2878473239638D1002C11A0 /* Home_Storyboard_K.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2878471239638D1002C11A0 /* Home_Storyboard_K.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3D53B7E239BCDBD0000D4E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3D53B79239BCDBD0000D4E8 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		A3D53B80239BCDBD0000D4E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3D53B79239BCDBD0000D4E8 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A3D53B84239BCDE20000D4E8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A3D53B83239BCDE20000D4E8 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1545BC26871D2C28A99594E3 /* Pods-LaviLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaviLog.debug.xcconfig"; path = "Target Support Files/Pods-LaviLog/Pods-LaviLog.debug.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +138,7 @@
 		A3038EC42396471E0013EE64 /* signUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpVC.swift; sourceTree = "<group>"; };
 		A3038EC52396471F0013EE64 /* admListTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = admListTVC.swift; sourceTree = "<group>"; };
 		A3038ED72396476F0013EE64 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A3038ED9239653B50013EE64 /* admListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = admListCell.swift; sourceTree = "<group>"; };
 		A30F4CDB2388CAAC0065E85C /* LaviLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaviLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30F4CDE2388CAAC0065E85C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A30F4CE02388CAAC0065E85C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +147,11 @@
 		A30F4CEA2388CAAE0065E85C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A30F4CEC2388CAAE0065E85C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A30F4CF22388CAE20065E85C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A3450DF523977D6400787ADD /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		A3450DF72397933500787ADD /* FirebaseWorks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseWorks.swift; sourceTree = "<group>"; };
+		A356EA632396C80C002695EF /* loadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = loadingView.xib; sourceTree = SOURCE_ROOT; };
+		A356EA672396CA80002695EF /* FuncLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuncLoadingView.swift; sourceTree = "<group>"; };
+		A3D53B79239BCDBD0000D4E8 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 		E287846023963843002C11A0 /* Answer_Daily_K.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer_Daily_K.swift; sourceTree = "<group>"; };
 		E287846123963843002C11A0 /* Question_Daily_K.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question_Daily_K.swift; sourceTree = "<group>"; };
 		E287846223963843002C11A0 /* SearchDailyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchDailyTableViewCell.swift; sourceTree = "<group>"; };
@@ -123,6 +168,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3450DF623977D6400787ADD /* Accelerate.framework in Frameworks */,
+				A3D53B82239BCDE20000D4E8 /* Charts.framework in Frameworks */,
+				A3450DF423976D6400787ADD /* FacebookLogin in Frameworks */,
 				C0315EFED042E555B0636CEE /* Pods_LaviLog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,6 +263,7 @@
 		7DC4543475AEF18491C1CA90 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A3450DF523977D6400787ADD /* Accelerate.framework */,
 				933C6F726D3107DC7326E0D1 /* Pods_LaviLog.framework */,
 			);
 			name = Frameworks;
@@ -223,23 +272,9 @@
 		A3038EB4239646EA0013EE64 /* JheJhen */ = {
 			isa = PBXGroup;
 			children = (
-				A3038EC52396471F0013EE64 /* admListTVC.swift */,
-				A3038EC32396471D0013EE64 /* backStage.storyboard */,
-				A3038EBE2396471B0013EE64 /* changePasswordVC.swift */,
-				A3038EB7239647170013EE64 /* editPhotoVC.swift */,
-				A3038EB8239647170013EE64 /* forgotPWVC.swift */,
-				A3038EC12396471C0013EE64 /* MyAccountStoryboard.storyboard */,
-				A3038EB9239647180013EE64 /* myAccountTVC.swift */,
-				A3038EBB239647190013EE64 /* MyProfileTVC.swift */,
-				A3038EBF2396471B0013EE64 /* orderDetailVC.swift */,
-				A3038EBC2396471A0013EE64 /* ordersTVCell.swift */,
-				A3038EC22396471D0013EE64 /* ordersVC.swift */,
-				A3038EB6239647160013EE64 /* signInVC.swift */,
-				A3038EC02396471C0013EE64 /* signUpPhoneVC.swift */,
-				A3038EC42396471E0013EE64 /* signUpVC.swift */,
-				A3038EBA239647190013EE64 /* userListCell.swift */,
-				A3038EBD2396471A0013EE64 /* userListVC.swift */,
-				A3038EB5239647160013EE64 /* Users.swift */,
+				A356EA602396C6F5002695EF /* Model */,
+				A356EA612396C71E002695EF /* Controller */,
+				A356EA622396C72B002695EF /* View */,
 			);
 			path = JheJhen;
 			sourceTree = "<group>";
@@ -247,6 +282,7 @@
 		A30F4CD22388CAAC0065E85C = {
 			isa = PBXGroup;
 			children = (
+				A3D53B79239BCDBD0000D4E8 /* Charts.xcodeproj */,
 				A30F4CDD2388CAAC0065E85C /* LaviLog */,
 				A30F4CDC2388CAAC0065E85C /* Products */,
 				09BBD47BFABDC5BA3994EB1F /* Pods */,
@@ -279,6 +315,57 @@
 				A30F4CEC2388CAAE0065E85C /* Info.plist */,
 			);
 			path = LaviLog;
+			sourceTree = "<group>";
+		};
+		A356EA602396C6F5002695EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3038EB5239647160013EE64 /* Users.swift */,
+				A356EA672396CA80002695EF /* FuncLoadingView.swift */,
+				A3450DF72397933500787ADD /* FirebaseWorks.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A356EA612396C71E002695EF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3038EB9239647180013EE64 /* myAccountTVC.swift */,
+				A3038EC22396471D0013EE64 /* ordersVC.swift */,
+				A3038EB7239647170013EE64 /* editPhotoVC.swift */,
+				A3038EBB239647190013EE64 /* MyProfileTVC.swift */,
+				A3038EBE2396471B0013EE64 /* changePasswordVC.swift */,
+				A3038EBF2396471B0013EE64 /* orderDetailVC.swift */,
+				A3038EC42396471E0013EE64 /* signUpVC.swift */,
+				A3038EBD2396471A0013EE64 /* userListVC.swift */,
+				A3038EC02396471C0013EE64 /* signUpPhoneVC.swift */,
+				A3038EB6239647160013EE64 /* signInVC.swift */,
+				A3038EC52396471F0013EE64 /* admListTVC.swift */,
+				A3038EB8239647170013EE64 /* forgotPWVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A356EA622396C72B002695EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A356EA632396C80C002695EF /* loadingView.xib */,
+				A3038ED9239653B50013EE64 /* admListCell.swift */,
+				A3038EBC2396471A0013EE64 /* ordersTVCell.swift */,
+				A3038EBA239647190013EE64 /* userListCell.swift */,
+				A3038EC12396471C0013EE64 /* MyAccountStoryboard.storyboard */,
+				A3038EC32396471D0013EE64 /* backStage.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3D53B7A239BCDBD0000D4E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3D53B7F239BCDBD0000D4E8 /* Charts.framework */,
+				A3D53B81239BCDBD0000D4E8 /* ChartsTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		E287845F23963843002C11A0 /* Moudel_Daily_K */ = {
@@ -323,12 +410,17 @@
 				A30F4CD82388CAAC0065E85C /* Frameworks */,
 				A30F4CD92388CAAC0065E85C /* Resources */,
 				6DFE6B1AB0E8DFA0C7A7B69D /* [CP] Embed Pods Frameworks */,
+				6DB25D391888FAD7D93B09B7 /* [CP] Copy Pods Resources */,
+				A3D53B84239BCDE20000D4E8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = LaviLog;
+			packageProductDependencies = (
+				A3450DF323976D6400787ADD /* FacebookLogin */,
+			);
 			productName = LaviLog;
 			productReference = A30F4CDB2388CAAC0065E85C /* LaviLog.app */;
 			productType = "com.apple.product-type.application";
@@ -357,14 +449,40 @@
 				Base,
 			);
 			mainGroup = A30F4CD22388CAAC0065E85C;
+			packageReferences = (
+				A3450DF223976D6400787ADD /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+			);
 			productRefGroup = A30F4CDC2388CAAC0065E85C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A3D53B7A239BCDBD0000D4E8 /* Products */;
+					ProjectRef = A3D53B79239BCDBD0000D4E8 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A30F4CDA2388CAAC0065E85C /* LaviLog */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A3D53B7F239BCDBD0000D4E8 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = A3D53B7E239BCDBD0000D4E8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A3D53B81239BCDBD0000D4E8 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = A3D53B80239BCDBD0000D4E8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A30F4CD92388CAAC0065E85C /* Resources */ = {
@@ -376,6 +494,7 @@
 				A30F4CEB2388CAAE0065E85C /* LaunchScreen.storyboard in Resources */,
 				A30F4CF32388CAE20065E85C /* GoogleService-Info.plist in Resources */,
 				5281E527238D16CC00C5E554 /* swift.png in Resources */,
+				A356EA642396C80C002695EF /* loadingView.xib in Resources */,
 				A3038ED22396471F0013EE64 /* MyAccountStoryboard.storyboard in Resources */,
 				5281E53D238D175800C5E554 /* YiNan.storyboard in Resources */,
 				A3038ED82396476F0013EE64 /* Main.storyboard in Resources */,
@@ -412,6 +531,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6DB25D391888FAD7D93B09B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LaviLog/Pods-LaviLog-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LaviLog/Pods-LaviLog-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LaviLog/Pods-LaviLog-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6DFE6B1AB0E8DFA0C7A7B69D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -441,7 +577,6 @@
 				A3038ED02396471F0013EE64 /* orderDetailVC.swift in Sources */,
 				E287846E23963887002C11A0 /* DateTableViewCell.swift in Sources */,
 				5281E539238D173100C5E554 /* SearchFriendVC.swift in Sources */,
-				5281E520238D16BF00C5E554 /* QRCodeVC.swift in Sources */,
 				A3038ECB2396471F0013EE64 /* userListCell.swift in Sources */,
 				A3038EC82396471F0013EE64 /* editPhotoVC.swift in Sources */,
 				A3038ED62396471F0013EE64 /* admListTVC.swift in Sources */,
@@ -450,9 +585,11 @@
 				A3038ED32396471F0013EE64 /* ordersVC.swift in Sources */,
 				A3038ECD2396471F0013EE64 /* ordersTVCell.swift in Sources */,
 				5281E537238D173100C5E554 /* Friend.swift in Sources */,
+				A3450DF82397933500787ADD /* FirebaseWorks.swift in Sources */,
 				5281E536238D173100C5E554 /* SearchFriendResultVC.swift in Sources */,
 				A30F4CE32388CAAC0065E85C /* ViewController.swift in Sources */,
 				A30F4CDF2388CAAC0065E85C /* AppDelegate.swift in Sources */,
+				A356EA682396CA80002695EF /* FuncLoadingView.swift in Sources */,
 				528022E8239550CB008777B0 /* Notice.swift in Sources */,
 				5281E530238D170E00C5E554 /* SearchUserVC.swift in Sources */,
 				E287846D23963887002C11A0 /* DaiyInsert_ViewController_K.swift in Sources */,
@@ -463,6 +600,7 @@
 				A3038ECA2396471F0013EE64 /* myAccountTVC.swift in Sources */,
 				5281E521238D16BF00C5E554 /* QRCodeViewController.swift in Sources */,
 				A3038EC62396471F0013EE64 /* Users.swift in Sources */,
+				A3038EDA239653B50013EE64 /* admListCell.swift in Sources */,
 				A30F4CE12388CAAC0065E85C /* SceneDelegate.swift in Sources */,
 				E287846C23963887002C11A0 /* DailyPage2ViewController_K.swift in Sources */,
 				A3038ED12396471F0013EE64 /* signUpPhoneVC.swift in Sources */,
@@ -617,7 +755,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = watermelon.LaviLog2;
+				PRODUCT_BUNDLE_IDENTIFIER = watermelon.LaviLog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -636,7 +774,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = watermelon.LaviLog2;
+				PRODUCT_BUNDLE_IDENTIFIER = watermelon.LaviLog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -665,6 +803,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A3450DF223976D6400787ADD /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A3450DF323976D6400787ADD /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3450DF223976D6400787ADD /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A30F4CD32388CAAC0065E85C /* Project object */;
 }

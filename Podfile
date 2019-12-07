@@ -6,8 +6,12 @@ target 'LaviLog' do
   use_frameworks!
 
   # Pods for LaviLog
+pod 'GoogleSignIn', '~> 5.0'
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore' 
 pod 'Firebase/Storage' 
+pod 'FBSDKCoreKit'
+pod 'FBSDKLoginKit' 
+
 
 end

@@ -116,6 +116,22 @@
                                     <action selector="btSignIn:" destination="bHz-ZS-q0O" eventType="touchUpInside" id="yyV-bJ-Oaf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZA1-qq-GhU">
+                                <rect key="frame" x="102" y="667" width="214" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="facebookLogin"/>
+                                <connections>
+                                    <action selector="btLoginFB:" destination="bHz-ZS-q0O" eventType="touchUpInside" id="pgH-01-xpN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVk-6j-pcB">
+                                <rect key="frame" x="102" y="704" width="214" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="googleLogin"/>
+                                <connections>
+                                    <action selector="btLoginGoogle:" destination="bHz-ZS-q0O" eventType="touchUpInside" id="4et-YQ-cxo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="IeJ-dX-ag6"/>
@@ -127,11 +143,22 @@
                         <outlet property="tfName" destination="qSB-Ub-8fY" id="TsS-hq-ZxX"/>
                         <outlet property="tfPassword" destination="L3b-PF-Qbd" id="Ik4-PI-TCk"/>
                         <segue destination="vBB-7f-wjn" kind="show" identifier="signInToMain" id="1zd-yj-1oG"/>
+                        <segue destination="hni-ox-3Fv" kind="show" identifier="signInToBackStage" id="gQx-Ji-McD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7rd-xn-bug" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3368" y="162"/>
+            <point key="canvasLocation" x="-3368.115942028986" y="161.38392857142856"/>
+        </scene>
+        <!--backStage-->
+        <scene sceneID="SZ5-dE-jGW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="backStage" id="hni-ox-3Fv" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hRZ-Ja-rSe"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xYC-La-sZB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3613" y="-474"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eX5-mo-nfI">
@@ -656,6 +683,8 @@
     <resources>
         <image name="cart" catalog="system" width="64" height="50"/>
         <image name="cart.fill" catalog="system" width="64" height="50"/>
+        <image name="facebookLogin" width="1252" height="136"/>
+        <image name="googleLogin" width="1250" height="140"/>
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="house.fill" catalog="system" width="64" height="52"/>
         <image name="lavilog" width="963" height="378"/>

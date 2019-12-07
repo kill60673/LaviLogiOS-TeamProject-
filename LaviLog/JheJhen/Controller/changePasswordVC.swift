@@ -20,7 +20,14 @@ class changePasswordVC: UIViewController {
     var user : Users!
     override func viewDidLoad() {
         super.viewDidLoad()
-        db.collection("users").whereField("account", isEqualTo: Auth.auth().currentUser!.email!).addSnapshotListener { (querySnapshot, error) in
+        if Auth.auth().currentUser == nil {
+            let alertController = UIAlertController(title: "使用第三方登入無法修改密碼", message: "請依登入方式至對應平台修改密碼", preferredStyle: .alert)
+            let ok = UIAlertAction(title: "確定", style: .default) { (alert) in
+                self.dismiss(animated: true)
+            }
+        }
+        
+        db.collection("users").whereField("account", isEqualTo: userAccount!).addSnapshotListener { (querySnapshot, error) in
             for snapShot in querySnapshot!.documents {
                 self.user = Users(dic: snapShot.data())
             }
@@ -37,7 +44,7 @@ class changePasswordVC: UIViewController {
             }
             
             Auth.auth().signIn(withEmail: user.account!, password: user.password!) { (AuthDataResult, error) in
-                print("AA")
+                
                 Auth.auth().currentUser?.delete(completion: { (error) in
                     if error == nil {
                         Auth.auth().createUser(withEmail: self.user.account!, password: self.tfNewPW.text!) { (AuthDataResult, error) in

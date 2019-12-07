@@ -27,8 +27,8 @@ class signUpVC: ViewController {
                 for snapshot in querySnapshot!.documents {
                     self.users.append(Users(dic: snapshot.data()))
                 }
+                print("usersCount",self.users.count)
             }
-            print("usersCount",self.users.count)
         }
     }
     @IBAction func btConfirm(_ sender: Any) {
@@ -57,13 +57,21 @@ class signUpVC: ViewController {
                     Auth.auth().createUser(withEmail: account, password: password) { (authDataResult, error) in
                         print(error?.localizedDescription)
                         if error == nil {
-                            let user = Users(account: account, birthDay: "", gender: "", id: "", imagePath: "", name: name, password: password, phone: "", status: "0", verificationCode: "", verificationId: "")
-                            let data : [String:Any] = ["account":user.account!,"birthDay":user.birthDay!,"gender":user.gender!,"id":self.db.collection("users").document().documentID,"imagePath":user.imagePath!,"name":user.name!,"password":user.password,"phone":user.phone!,"status":user.status!,"verficationCode":user.verificationCode,"verificationId":user.verificationId]
-                            self.db.collection("users").addDocument(data: data) { (error) in
+                            let user = Users(account: account, birthDay: "", gender: "", id: "", imagePath: "/images_users/ no_image.jpg", name: name, password: password, phone: "", status: "0", verificationCode: "", verificationId: "")
+                            
+                            let id = self.db.collection("users").document().documentID
+                            /*先取得要儲存的document ID 之後指定這個ID作文資料存檔的文件ＩＤ*/
+                            let data : [String:Any] = ["account":user.account!,"birthDay":user.birthDay!,"gender":user.gender!,"id":id,"imagePath":user.imagePath!,"name":user.name!,"password":user.password,"phone":user.phone!,"status":user.status!,"verficationCode":user.verificationCode,"verificationId":user.verificationId]
+                            self.db.collection("users").document(id).setData(data) { (error) in
                                 if error == nil {
                                     self.performSegue(withIdentifier: "signUpToSignIn", sender: self)
                                 }
                             }
+//                            self.db.collection("users").addDocument(data: data) { (error) in
+//                                if error == nil {
+//                                    self.performSegue(withIdentifier: "signUpToSignIn", sender: self)
+//                                }
+//                            }
                         }
                     }
                 } else {

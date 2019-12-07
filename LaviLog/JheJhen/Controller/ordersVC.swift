@@ -86,7 +86,7 @@ class ordersVC: UIViewController,UITableViewDelegate,UITableViewDataSource,UITex
     }
     
     func downLoadFirebase(){
-        db.collection("order").whereField("account", isEqualTo: Auth.auth().currentUser!.email!).addSnapshotListener { (QuerySnapshot, Error) in
+        db.collection("order").whereField("account", isEqualTo: userAccount!).addSnapshotListener { (QuerySnapshot, Error) in
             guard let QuerySnapshot = QuerySnapshot else {
                 return
             }

@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FacebookLogin
 
 class myAccountTVC: UITableViewController {
 
@@ -16,8 +17,10 @@ class myAccountTVC: UITableViewController {
     }
     
     @IBAction func btSignOut(_ sender: Any) {
+        let manager = LoginManager()
         do {
             try Auth.auth().signOut()
+            try manager.logOut()
             dismiss(animated: true)
         }catch {
             print(error)

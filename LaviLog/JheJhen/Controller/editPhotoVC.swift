@@ -62,7 +62,7 @@ class editPhotoVC: UIViewController,UIImagePickerControllerDelegate,UINavigation
 //            }
 //            print(imageName)
 //        })
-        let fileReference = Storage.storage().reference().child("images_users/\(Auth.auth().currentUser!.email!).jpg")
+        let fileReference = Storage.storage().reference().child("images_users/\(userAccount!).jpg")
         let metaData = StorageMetadata()
         metaData.contentType = "image/jpg"
         if let data = ivPhoto.image?.jpegData(compressionQuality: 0.1) {
@@ -82,7 +82,7 @@ class editPhotoVC: UIViewController,UIImagePickerControllerDelegate,UINavigation
     func downloadPhoto(){
         var imagePath = ""
         let db = Firestore.firestore()
-        db.collection("users").whereField("account", isEqualTo: "\(Auth.auth().currentUser!.email!)").addSnapshotListener { (querySnapshot, error) in
+        db.collection("users").whereField("account", isEqualTo: "\(userAccount!)").addSnapshotListener { (querySnapshot, error) in
             guard let querySnapshot = querySnapshot else {
                 return
             }
